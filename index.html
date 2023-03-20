@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Convertidor de Divisas</title>
+</head>
+<body>
+    <div class="container mb-2">
+        <div class="img-head" style="padding: 0px 0px 20px 0px;">
+            <img src="assets/imgs/header-1.jpg" class="img-fluid" alt="header-1">
+        </div>
+        <div class="mb-2">
+            <input class="form-control" type="number" id="number" min="0" max="9999999999" placeholder="Ingrese la Cantidad de Pesos a Cambiar"/>
+        </div>
+        <div class="mb-3">
+            <h5 class="text-muted" style="text-align: center; padding: 20px;">Selecciona la moneda a la cual Convertir:</h5>
+            <select name="select" id="select" class="form-select">
+                <option value="none">Selecciona</option>
+                <option value="dolar">Dolar U$D</option>
+                <option value="euro">Euro €</option>
+                <option value="uf">Unidad de Fomento UF</option>
+              </select>
+        </div>
+        <div class="d-grid col-4 mx-auto">
+            <button class="btn btn-outline-secondary" id="button">Buscar</button>
+        </div>
+        <div class="mb-2">
+            <p class="text">El monto convertido corresponde a: <span id="valor"></span></p>
+        </div>
+        <div class="mb-2">
+            <canvas id="myChart"></canvas>
+          </div>
+      
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script src="assets/js/script.js"></script>
+    </div>
+</body>
+</html>

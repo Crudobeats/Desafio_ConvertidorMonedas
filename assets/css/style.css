@@ -1,0 +1,21 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.text-muted {
+    color: darkblue !important;
+}
+
+#button {
+    background-color: darkblue;
+    color: white;
+    width: 400px;
+    margin-top: 20px;
+}
+
+.text {
+    text-align: center !important;
+    padding: 20px;
+}
